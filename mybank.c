@@ -1,65 +1,29 @@
-#include <stdio.h>
-#include <string.h>
+#include "app.h"
 
 int main()
 {
+	char password[20];
+	int passwordCorrect = 0;
 	/*Greeting Message*/
 	printf("\nHello, Welcome to myBank. With us, Banking has been made easy.\n");
 
 	/*Create an account - implementing registration*/
-	char firstName[50], lastName[50];
+	createAccount();
 
-	printf("Please create an account\nEnter your first and last name here: ");
-	scanf("%s %s", firstName, lastName);
-
-	char pass[20];
-	char val[20];
-	int value;
-	int i = 3;
-	int passwordCorrect = 0; /*Flag variable to correct password validation*/
-
+	/*Register using password and validate*/
 	printf("Create a password: ");
-	scanf("%s", pass);
-	printf("Confirm password: ");
-	scanf("%s",val);
+	scanf("%s", password);
 
-	value = strcmp(pass, val);
+	passwordCorrect = validatePassword(password); /*validates the password*/
 
-	if (value != 0)
-	{
-		while (i >= 0)
-		{
-			printf("\n YOur passwords dont match");
-			printf("Try again, Re-enter Password: ");
-			scanf("%s", val);
-
-			value = strcmp(pass, val);
-
-			if (value == 0)
-			{
-				passwordCorrect = 1;
-				break;
-			}
-			if (i > 0)
-				printf("Passwords dont match. You have %d more attempts", i);
-			else
-				printf("Sorry you cant create an account.");
-
-
-			i--;
-		}
-
-	}
-	else
-		passwordCorrect = 1;
-
+	
 	
 	char option;
 	double balance = 50000.0;
 
 	if (passwordCorrect)
 	{
-		printf("Your password is correct. Welcome to instant banking with myBank \n You have a fixd amount of 50,000. What do you want to do with it? \n");
+		printf("Your password is correct. Welcome to instant banking with myBank \nYou have a fixed amount of 50,000. What do you want to do with it? \n\n");
 
 		while (1)
 		{
@@ -90,7 +54,6 @@ int main()
 				case 'd':
 					printf("Option d: Quit the app\n");
 					return (0);
-					break;
 				default:
 					printf("Invalid option. Please try again.\n");
 
