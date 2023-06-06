@@ -6,6 +6,7 @@
 
 void createAccount();
 int validatePassword(const char* password);
+void transferMoney(double* balance, double* lastTransferAmount);
 
 
 

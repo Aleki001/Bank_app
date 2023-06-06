@@ -4,6 +4,8 @@ int main()
 {
 	char password[20];
 	int passwordCorrect = 0;
+	double lastTransferAmount = 0.0;
+
 	/*Greeting Message*/
 	printf("\nHello, Welcome to myBank. With us, Banking has been made easy.\n");
 
@@ -41,7 +43,7 @@ int main()
 			{
 				case 'a': 
 					printf("Option a: Transfer money\n");
-					/* add code to transfer money*/
+					transferMoney(&balance, &lastTransferAmount);
 					break;
 				case 'b':
 					printf("Option b: Deposit money\n");
