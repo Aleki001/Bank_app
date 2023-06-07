@@ -1,0 +1,11 @@
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: 10000.00
+Previous Balance: 50000.00
+Current Balance: 60000.00
+Date: 2023-06-07 09:13:1686118428
+-------------------------
+-------------------------
