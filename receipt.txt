@@ -3,20 +3,75 @@ Transaction Type: Credit Alert
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
-Amount: 10000.00
-Previous Balance: 50000.00
-Current Balance: 60000.00
-Date: 2023-06-07 09:13:1686118428
+Amount: $212.00
+Previous Balance: $0.00
+Current Balance: $212.00
+Date: 2023-06-07 13:09
 -------------------------
 -------------------------
 Transaction Details: 
 Transaction Type: Debit Alert
-Account Name: Equi1234
-Account Number: 029274E
-Bank: Equity
-Amount: 39000.00
-Previous Balance: 50000.00
-Current Balance: 11000.00
-Date: 2023-06-07 09:30:1686119403
+Account Name: 4
+Account Number: aa
+Bank: aa
+Amount: $0.00
+Previous Balance: $212.00
+Current Balance: $212.00
+Date: 2023-06-07 13:09
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $22.00
+Previous Balance: $212.00
+Current Balance: $234.00
+Date: 2023-06-07 13:10
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $22222.00
+Previous Balance: $234.00
+Current Balance: $22456.00
+Date: 2023-06-07 13:10
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $0.00
+Previous Balance: $22456.00
+Current Balance: $22456.00
+Date: 2023-06-07 13:10
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $21.00
+Previous Balance: $0.00
+Current Balance: $21.00
+Date: 2023-06-07 13:15
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: Credit Alert
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $1023.00
+Previous Balance: $0.00
+Current Balance: $1023.00
+Date: 2023-06-07 17:29
 -------------------------
 -------------------------

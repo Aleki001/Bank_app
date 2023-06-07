@@ -2,5 +2,7 @@
 
 void checkBalance(double balance)
 {
-        printf("Your current balance is: %.2f\n", balance);
+        int delay = 1;
+        sleep(delay);
+        printf("Your current balance is: $%.2f\n", balance);
 }

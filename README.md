@@ -33,7 +33,7 @@ gcc *.c -o bank
 
 2. Enter your password. The program will validate the password by asking you to re-enter it. You have three attempts to enter the correct password.
 
-3. Once your password is validated, you will be welcomed to MyBank, and your initial account balance of 50,000 will be displayed.
+3. Once your password is validated, you will be welcomed to MyBank, and your initial account balance of $0.00 will be displayed.
 
 4. The following options are available in the menu:
 

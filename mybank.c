@@ -5,15 +5,16 @@ int main()
 	char password[20];
 	int passwordCorrect = 0;
 	double lastTransferAmount = 0.0;
+	int delay = 5;
 
 	/*Greeting Message*/
-	printf("\nHello, Welcome to myBank. With us, Banking has been made easy.\n");
+	printf("\n\t\tHello, Welcome to M-Bank. With us, Banking has been made easy.\n");
 
 	/*Create an account - implementing registration*/
 	createAccount();
 
 	/*Register using password and validate*/
-	printf("Create a password: ");
+	printf("  Create a password: ");
 	scanf("%s", password);
 
 	passwordCorrect = validatePassword(password); /*validates the password*/
@@ -21,45 +22,46 @@ int main()
 	
 	
 	char option;
-	double balance = 50000.0;
+	double balance = 0.0;
 
 	if (passwordCorrect)
 	{
-		printf("Your password is correct. Welcome to instant banking with myBank \nYou have a fixed amount of 50,000. What do you want to do with it? \n\n");
-
 		while (1)
 		{
-			printf("Menu:\n");
-			printf("a. Transfer Money\n");
-			printf("b. Deposit Money\n");
-			printf("c. Check Balance\n");
-			printf("d. Quit the app\n\n");
+			system("clear");
+
+			printf("\t\tWelcome to M-Bank. Banking Made Easy :)\n\n");
+			printf("MENU:\n");
+			printf(" 1. Transfer Money\n");
+			printf(" 2. Deposit Money\n");
+			printf(" 3. Check Balance\n");
+			printf(" 4. Close App\n");
 		
 
-			printf("Select an option: ");
+			printf("\nSelect an option: ");
 			scanf(" %c", &option);
 
 			switch (option)
 			{
-				case 'a': 
-					printf("Option a: Transfer money\n");
+				case '1': 
+					printf("\n\n\t Transfer money\n\n");
 					transferMoney(&balance, &lastTransferAmount);
 					break;
-				case 'b':
-					printf("Option b: Deposit money\n");
+				case '2':
+					printf("\n\n\t Deposit money\n\n");
 					depositMoney(&balance);
 					break;
-				case 'c':
-					printf("Option c: Check balance\n");
+				case '3':
+					printf("\n\n\tChecking balance...\n\n");
 					checkBalance(balance);
 					break;
-				case 'd':
-					printf("Option d: Quit the app\n");
+				case '4':
 					return (0);
 				default:
-					printf("Invalid option. Please try again.\n");
+					printf("\nInvalid option. Please try again.\n\n");
 
 			}
+			sleep(delay);
 		}
 	}
 

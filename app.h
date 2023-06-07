@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <stdlib.h>
+
 
 void createAccount();
 int validatePassword(const char* password);

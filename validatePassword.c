@@ -6,7 +6,7 @@ int validatePassword(const char* password)
 	int value;
 	int i = 3;
 
-	printf("Confirm password: ");
+	printf("  Confirm password: ");
 	scanf("%s",confirmPassword);
 
 	value = strcmp(password, confirmPassword);
@@ -15,8 +15,8 @@ int validatePassword(const char* password)
 	{
 		while (i >= 0)
 		{
-			printf("\n Your passwords dont match");
-			printf("Try again, Re-enter Password: ");
+			printf("\n  Your passwords dont match");
+			printf("  Try again, Re-enter Password: ");
 			scanf("%s", confirmPassword);
 
 			value = strcmp(password, confirmPassword);
@@ -26,9 +26,9 @@ int validatePassword(const char* password)
 				return (1);
 			}
 			if (i > 0)
-				printf("Passwords dont match. You have %d more attempts\n", i);
+				printf("  Passwords dont match. You have %d more attempts\n", i);
 			else
-				printf("Your Account is locked.\n");
+				printf("  Your Account is locked.\n");
 
 
 			i--;
