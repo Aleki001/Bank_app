@@ -47,11 +47,11 @@ int main()
 					break;
 				case 'b':
 					printf("Option b: Deposit money\n");
-					/* add code to deposit money*/
+					depositMoney(&balance);
 					break;
 				case 'c':
 					printf("Option c: Check balance\n");
-					/* add code to check balance*/
+					checkBalance(balance);
 					break;
 				case 'd':
 					printf("Option d: Quit the app\n");

@@ -12,7 +12,7 @@ void transferMoney(double* balance, double* lastTransferAmount)
         printf("Enter recipient's bank: ");
         scanf("%s", bank);
         printf("Enter transfer amount: ");
-        scanf("%lf", amount);
+        scanf("%lf", &amount);
 
 
         if(amount > *balance)
