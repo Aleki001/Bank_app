@@ -36,6 +36,6 @@ void transferMoney(double* balance, double* lastTransferAmount)
         printf("\n\tYou have successfully sent $%.2f to %s %s Bank at %s. Your account balance is $%.2f. Thank you for choosing M-Bank.\n\n", amount, accountNumber, bank, datetime, *balance);
 
         /*print receipt with transaction details*/
-        printReceipt("Debit Alert", accountName, accountNumber, bank, amount, *balance + amount, *balance);
+        printReceipt("TRANSFER", accountName, accountNumber, bank, amount, *balance + amount, *balance);
 
 }

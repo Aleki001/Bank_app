@@ -1,5 +1,5 @@
 # Bank_app
-This is an application that perfoms basic bank operations lke sending/transfering money, checking the balance and also depositing money into the account.
+This is an application that perfoms basic bank operations like sending/transfering money, withdrawing cash, checking the balance and also depositing money into the account.
 It is developed using C programming language.
 
 ## Prerequisites
@@ -41,9 +41,11 @@ gcc *.c -o bank
 
    - **b. Deposit Money**: Deposit a specified amount into your account. Enter the deposit amount. If the deposit amount is invalid (less than or equal to zero), an error message will be displayed.
 
-   - **c. Check Balance**: Check the current balance of your account.
+   - **c. Withdraw Cash**: Withdraw a specified amount from your account. Enter the withdraw amount. If the withdraw amount is invalid (less than or equal to zero), an error message will be displayed.
 
-   - **d. Quit the Program**: Exit the program.
+   - **d. Check Balance**: Check the current balance of your account.
+
+   - **e. Quit the Program**: Exit the program.
 
 5. After each transaction, a transaction receipt will be generated and saved in a file named "receipt.txt". The receipt contains details such as the transaction type, account name, account number, bank name, transaction amount, previous balance, current balance, and the date and time of the transaction.
 

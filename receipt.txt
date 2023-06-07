@@ -1,77 +1,22 @@
 Transaction Details: 
-Transaction Type: Credit Alert
+Transaction Type: DEPOSIT
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
-Amount: $212.00
+Amount: $2.00
 Previous Balance: $0.00
-Current Balance: $212.00
-Date: 2023-06-07 13:09
+Current Balance: $2.00
+Date: 2023-06-07 19:44
 -------------------------
 -------------------------
 Transaction Details: 
-Transaction Type: Debit Alert
-Account Name: 4
-Account Number: aa
-Bank: aa
-Amount: $0.00
-Previous Balance: $212.00
-Current Balance: $212.00
-Date: 2023-06-07 13:09
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: Credit Alert
-Account Name: N/A
-Account Number: N/A
-Bank: N/A
-Amount: $22.00
-Previous Balance: $212.00
-Current Balance: $234.00
-Date: 2023-06-07 13:10
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: Credit Alert
-Account Name: N/A
-Account Number: N/A
-Bank: N/A
-Amount: $22222.00
-Previous Balance: $234.00
-Current Balance: $22456.00
-Date: 2023-06-07 13:10
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: Credit Alert
+Transaction Type: DEPOSIT
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
 Amount: $0.00
-Previous Balance: $22456.00
-Current Balance: $22456.00
-Date: 2023-06-07 13:10
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: Credit Alert
-Account Name: N/A
-Account Number: N/A
-Bank: N/A
-Amount: $21.00
-Previous Balance: $0.00
-Current Balance: $21.00
-Date: 2023-06-07 13:15
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: Credit Alert
-Account Name: N/A
-Account Number: N/A
-Bank: N/A
-Amount: $1023.00
-Previous Balance: $0.00
-Current Balance: $1023.00
-Date: 2023-06-07 17:29
+Previous Balance: $2.00
+Current Balance: $2.00
+Date: 2023-06-07 19:45
 -------------------------
 -------------------------

@@ -25,5 +25,5 @@ void depositMoney(double* balance)
 
 	printf("\n\tYou have successfully deposited $%.2f in your account at %s. Your account balance is $%.2f. Thank you for choosing M-Bank.\n\n", depositAmount, datetime, *balance);
 	
-	printReceipt("Credit Alert", "N/A", "N/A", "N/A", depositAmount, *balance - depositAmount, *balance);
+	printReceipt("DEPOSIT", "N/A", "N/A", "N/A", depositAmount, *balance - depositAmount, *balance);
 }

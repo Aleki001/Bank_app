@@ -34,8 +34,9 @@ int main()
 			printf("MENU:\n");
 			printf(" 1. Transfer Money\n");
 			printf(" 2. Deposit Money\n");
-			printf(" 3. Check Balance\n");
-			printf(" 4. Close App\n");
+			printf(" 3. Withdraw Cash\n");
+			printf(" 4. Check Balance\n");
+			printf(" 5. Close App\n");
 		
 
 			printf("\nSelect an option: ");
@@ -52,10 +53,14 @@ int main()
 					depositMoney(&balance);
 					break;
 				case '3':
+					printf("\n\n\t Withdraw money\n\n");
+					withdrawCash(&balance);
+					break;
+				case '4':
 					printf("\n\n\tChecking balance...\n\n");
 					checkBalance(balance);
 					break;
-				case '4':
+				case '5':
 					return (0);
 				default:
 					printf("\nInvalid option. Please try again.\n\n");
