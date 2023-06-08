@@ -1,8 +1,12 @@
 #include "app.h"
 
-void checkBalance(double balance)
+void checkBalance(double balance, const char* password)
 {
-        int delay = 5;
-        printf("\n\nYour current balance is: $%.2f\n", balance);
-        sleep(delay);
+        int passwordCorrect = 0;
+        passwordCorrect = validatePassword(password); /*Asks for the password*/
+
+        if (passwordCorrect)
+                printf("\n\nYour current balance is: $%.2f\n", balance);
+
+        sleep(DELAY);
 }

@@ -5,7 +5,6 @@ int main()
 	char password[20];
 	int passwordCorrect = 0;
 	double lastTransferAmount = 0.0;
-	int delay = 5;
 
 	/*Greeting Message*/
 	printf("\n\t\tHello, Welcome to M-Bank. With us, Banking has been made easy.\n");
@@ -46,19 +45,19 @@ int main()
 			{
 				case 1: 
 					printf("\n\n\t Transfer money\n\n");
-					transferMoney(&balance, &lastTransferAmount);
+					transferMoney(&balance, &lastTransferAmount, password);
 					break;
 				case 2:
 					printf("\n\n\t Deposit money\n\n");
-					depositMoney(&balance);
+					depositMoney(&balance, password);
 					break;
 				case 3:
 					printf("\n\n\t Withdraw money\n\n");
-					withdrawCash(&balance);
+					withdrawCash(&balance, password);
 					break;
 				case 4:
 					printf("\n\n\tMy Account\n\n");
-					myAccount(balance);
+					myAccount(balance, password);
 					break;
 				case 00:
 					return (0);
@@ -66,7 +65,6 @@ int main()
 					printf("\nInvalid option. Please try again.\n\n");
 
 			}
-			sleep(delay);
 		}
 	}
 

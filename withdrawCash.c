@@ -1,8 +1,9 @@
 #include "app.h"
 
-void withdrawCash(double* balance)
+void withdrawCash(double* balance, const char* password)
 {
 	double withdrawAmount;
+	int passwordCorrect = 0;
  
 	 /*Getting current time*/
 	time_t t = time(NULL);
@@ -15,21 +16,28 @@ void withdrawCash(double* balance)
 	printf("  Enter amount to withdraw: $");
 	scanf("%lf", &withdrawAmount);
 
-	if (withdrawAmount <= 0)
+	passwordCorrect = validatePassword(password); /*Asks for the password*/
+
+	if (passwordCorrect)
 	{
-		printf("  Invalid withdrawal amount.\n");
-		return;
-	}
+		if (withdrawAmount <= 0)
+		{
+			printf("  Invalid withdrawal amount.\n");
+			return;
+		}
 
-	if (withdrawAmount > *balance)
-	{
-		printf("\n  You have insufficient funds on your account. You have an outstanding balance of $%.2f. Thank you for choosing M-Bank \n", *balance);
-		return;
-	}
+		if (withdrawAmount > *balance)
+		{
+			printf("\n  You have insufficient funds on your account. You have an outstanding balance of $%.2f. Thank you for choosing M-Bank \n", *balance);
+			return;
+		}
 
-	*balance -= withdrawAmount;
+		*balance -= withdrawAmount;
 
-	printf("\n\tYou have successfully withdrawn $%.2f from your account at %s. Your account balance is $%.2f. Thank you for choosing M-Bank.\n\n", withdrawAmount, datetime, *balance);
+		printf("\n\tYou have successfully withdrawn $%.2f from your account at %s. Your account balance is $%.2f. Thank you for choosing M-Bank.\n\n", withdrawAmount, datetime, *balance);
 	
-	printReceipt("WITHDRAW", "N/A", "N/A", "N/A", withdrawAmount, *balance + withdrawAmount, *balance);
+		printReceipt("WITHDRAW", "N/A", "N/A", "N/A", withdrawAmount, *balance + withdrawAmount, *balance);
+
+		sleep(DELAY);
+	}
 }

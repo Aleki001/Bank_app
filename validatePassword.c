@@ -15,7 +15,7 @@ int validatePassword(const char* password)
 	{
 		while (i >= 0)
 		{
-			printf("\n  Your passwords dont match");
+			printf("\n  Wrong Password!!");
 			printf("  Try again, Re-enter Password: ");
 			scanf("%s", confirmPassword);
 

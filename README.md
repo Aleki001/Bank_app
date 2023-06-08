@@ -37,13 +37,16 @@ gcc *.c -o bank
 
 4. The following options are available in the menu:
 
-   - **a. Transfer Money**: Transfer a specified amount from your account to another recipient's account. Enter the recipient's account name, account number, bank name, and the transfer amount. If the transfer amount exceeds your account balance, an insufficient balance message will be displayed.
+   - **a. Transfer Money**: Transfer a specified amount from your account to another recipient's account. Enter the recipient's account name, account number, bank name, and the transfer amount. You will also be prompted for a password of which you will input and hit enter to proceed. If the transfer amount exceeds your account balance, an insufficient balance message will be displayed.
 
-   - **b. Deposit Money**: Deposit a specified amount into your account. Enter the deposit amount. If the deposit amount is invalid (less than or equal to zero), an error message will be displayed.
+   - **b. Deposit Money**: Deposit a specified amount into your account. Enter the deposit amount. You will also be prompted for a password of which you will input and hit enter to proceed. If the deposit amount is invalid (less than or equal to zero), an error message will be displayed.
 
-   - **c. Withdraw Cash**: Withdraw a specified amount from your account. Enter the withdraw amount. If the withdraw amount is invalid (less than or equal to zero), an error message will be displayed.
+   - **c. Withdraw Cash**: Withdraw a specified amount from your account. Enter the withdraw amount. You will also be prompted for a password of which you will input and hit enter to proceed. If the withdraw amount is invalid (less than or equal to zero), an error message will be displayed.
 
-   - **d. Check Balance**: Check the current balance of your account.
+   - **d. My Account**: THis option directs you to another list of options to choose from which are:
+      - **1. Check Balance**: This checks the balance of your account. You will be prompted to input your password to proceed.
+
+      - **2. Mini Statement**: This prints the receipts of your transactions. You will also be prompted to input password to proceed.
 
    - **e. Quit the Program**: Exit the program.
 
