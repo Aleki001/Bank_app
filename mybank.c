@@ -21,7 +21,7 @@ int main()
 
 	
 	
-	char option;
+	int option;
 	double balance = 0.0;
 
 	if (passwordCorrect)
@@ -35,32 +35,32 @@ int main()
 			printf(" 1. Transfer Money\n");
 			printf(" 2. Deposit Money\n");
 			printf(" 3. Withdraw Cash\n");
-			printf(" 4. Check Balance\n");
-			printf(" 5. Close App\n");
+			printf(" 4. My Account\n");
+			printf(" 00. Close App\n");
 		
 
 			printf("\nSelect an option: ");
-			scanf(" %c", &option);
+			scanf(" %d", &option);
 
 			switch (option)
 			{
-				case '1': 
+				case 1: 
 					printf("\n\n\t Transfer money\n\n");
 					transferMoney(&balance, &lastTransferAmount);
 					break;
-				case '2':
+				case 2:
 					printf("\n\n\t Deposit money\n\n");
 					depositMoney(&balance);
 					break;
-				case '3':
+				case 3:
 					printf("\n\n\t Withdraw money\n\n");
 					withdrawCash(&balance);
 					break;
-				case '4':
-					printf("\n\n\tChecking balance...\n\n");
-					checkBalance(balance);
+				case 4:
+					printf("\n\n\tMy Account\n\n");
+					myAccount(balance);
 					break;
-				case '5':
+				case 00:
 					return (0);
 				default:
 					printf("\nInvalid option. Please try again.\n\n");

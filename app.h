@@ -5,6 +5,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 
 void createAccount();
@@ -14,7 +15,8 @@ void depositMoney(double* balance);
 void withdrawCash(double* balance);
 void checkBalance(double balance);
 void printReceipt(const char* transactionType, const char* accountName, const char* accountNumber, const char* bank, double amount, double previousBalance, double currentBalance);
-
+void miniStatement();
+void myAccount(double balance);
 
 
 

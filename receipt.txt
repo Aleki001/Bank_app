@@ -3,10 +3,10 @@ Transaction Type: DEPOSIT
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
-Amount: $2.00
+Amount: $12000.00
 Previous Balance: $0.00
-Current Balance: $2.00
-Date: 2023-06-07 19:44
+Current Balance: $12000.00
+Date: 2023-06-08 10:41
 -------------------------
 -------------------------
 Transaction Details: 
@@ -14,9 +14,20 @@ Transaction Type: DEPOSIT
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
-Amount: $0.00
-Previous Balance: $2.00
-Current Balance: $2.00
-Date: 2023-06-07 19:45
+Amount: $150.00
+Previous Balance: $12000.00
+Current Balance: $12150.00
+Date: 2023-06-08 10:42
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: TRANSFER
+Account Name: WEEW
+Account Number: 121D
+Bank: WINAS
+Amount: $1300.00
+Previous Balance: $12150.00
+Current Balance: $10850.00
+Date: 2023-06-08 10:43
 -------------------------
 -------------------------
