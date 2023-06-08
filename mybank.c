@@ -20,7 +20,7 @@ int main()
 
 	
 	
-	int option;
+	int option, delay = 2;
 	double balance = 0.0;
 
 	if (passwordCorrect)
@@ -63,8 +63,11 @@ int main()
 					return (0);
 				default:
 					printf("\nInvalid option. Please try again.\n\n");
+					getchar();/*This will clear the newline character from the input buffer*/
+					break;
 
 			}
+			sleep(delay);
 		}
 	}
 

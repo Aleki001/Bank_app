@@ -5,6 +5,7 @@ int validatePassword(const char* password)
 	char confirmPassword[20];
 	int value;
 	int i = 3;
+	int delay = 2;
 
 	printf("  Confirm password: ");
 	scanf("%s",confirmPassword);
@@ -15,8 +16,10 @@ int validatePassword(const char* password)
 	{
 		while (i >= 0)
 		{
-			printf("\n  Wrong Password!!");
-			printf("  Try again, Re-enter Password: ");
+			system("clear");
+
+			printf("\n  You have entered the wrong password, Try again.\n\n");
+			printf("  Re-enter Password: ");
 			scanf("%s", confirmPassword);
 
 			value = strcmp(password, confirmPassword);
@@ -32,6 +35,8 @@ int validatePassword(const char* password)
 
 
 			i--;
+
+			sleep(delay);
 		}
 
 	}

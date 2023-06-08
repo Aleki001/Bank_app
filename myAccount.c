@@ -2,7 +2,7 @@
 
 void myAccount(double balance, const char* password)
 {
-        int option;
+        int option, delay = 2;
 
         while (1)
         {
@@ -22,16 +22,18 @@ void myAccount(double balance, const char* password)
                 {
                         case 1:
                                 checkBalance(balance, password);
-                        break;
+                                break;
                         case 2:
                                 miniStatement(password);
-                        break;
+                                break;
                         case 00:
                                 return;
                         default:
                                 printf("\nInvalid option. Please try again.\n\n");
-                        break;
+                                getchar(); /*This will clear the newline character from the input buffer*/
+                                break;
                 }
+                sleep(delay);
 
         }
 }

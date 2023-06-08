@@ -3,20 +3,9 @@ Transaction Type: DEPOSIT
 Account Name: N/A
 Account Number: N/A
 Bank: N/A
-Amount: $1200.00
+Amount: $121.00
 Previous Balance: $0.00
-Current Balance: $1200.00
-Date: 2023-06-08 11:43
--------------------------
--------------------------
-Transaction Details: 
-Transaction Type: TRANSFER
-Account Name: qqq
-Account Number: qq
-Bank: q
-Amount: $1030.00
-Previous Balance: $1200.00
-Current Balance: $170.00
-Date: 2023-06-08 11:44
+Current Balance: $121.00
+Date: 2023-06-08 16:05
 -------------------------
 -------------------------
