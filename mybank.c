@@ -34,7 +34,8 @@ int main()
 			printf(" 1. Transfer Money\n");
 			printf(" 2. Deposit Money\n");
 			printf(" 3. Withdraw Cash\n");
-			printf(" 4. My Account\n");
+			printf(" 4. Loans and Savings\n");
+			printf(" 5. My Account\n");
 			printf(" 00. Close App\n");
 		
 
@@ -56,6 +57,10 @@ int main()
 					withdrawCash(&balance, password);
 					break;
 				case 4:
+					printf("\n\n\t Withdraw money\n\n");
+					loansAndSavings(balance, password);
+					break;
+				case 5:
 					printf("\n\n\tMy Account\n\n");
 					myAccount(balance, password);
 					break;
