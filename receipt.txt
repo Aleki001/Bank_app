@@ -1,0 +1,66 @@
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $1234567.00
+Previous Balance: $0.00
+Current Balance: $1234567.00
+Date: 2023-06-10 17:40
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $122222.00
+Previous Balance: $0.00
+Current Balance: $122222.00
+Date: 2023-06-10 17:52
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $1000.00
+Previous Balance: $0.00
+Current Balance: $1000.00
+Date: 2023-06-10 18:02
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $1000.00
+Previous Balance: $0.00
+Current Balance: $1000.00
+Date: 2023-06-10 18:06
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $1000.00
+Previous Balance: $0.00
+Current Balance: $1000.00
+Date: 2023-06-10 18:15
+-------------------------
+-------------------------
+Transaction Details: 
+Transaction Type: DEPOSIT
+Account Name: N/A
+Account Number: N/A
+Bank: N/A
+Amount: $10000.00
+Previous Balance: $0.00
+Current Balance: $10000.00
+Date: 2023-06-10 18:54
+-------------------------
+-------------------------

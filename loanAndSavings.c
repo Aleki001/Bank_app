@@ -1,6 +1,6 @@
 #include "app.h"
 
-void loansAndSavings(double balance, const char* password)
+void loansAndSavings(double* balance, const char* password)
 {
         int option;
 	double savingsBalance = 0.0;
@@ -57,24 +57,37 @@ void sendToSavings(double* balance, double* savingsBalance, const char* password
         double amount;
 	int passwordCorrect = 0;
 
-        printf("Enter the amount to save: ");
+         /*Getting current time*/
+	time_t t = time(NULL);
+	struct tm* current_time = localtime(&t);
+
+	/*Format the date and time as a string*/
+	char datetime[50];
+	strftime(datetime, sizeof(datetime), "%Y-%m-%d %H:%M", current_time);
+
+        printf("Enter the amount to save: $");
         scanf("%lf", &amount);
 
         passwordCorrect = validatePassword(password); /*Asks for the password*/
 
-        if (amount <= *balance)
+        if (passwordCorrect)
         {
-                if (passwordCorrect)
-                {
-                        *balance -= amount;
-                        *savingsBalance += amount;
-                        printf("Amount successfully saved to M-SAVINGS.\n");
-                }
+                if(amount > *balance)
+		{
+			printf("\n\tInsufficient balance. Unable to save to M-SAVINGS.\n");
+                        sleep(DELAY);
+			return;
+		}
+
+                *balance -= amount;
+                *savingsBalance += amount;
+
+                printf("\n\tSuccessfully saved %.2lf to M-SAVINGS at %s. Your M-SAVINGS balance is %.2lf and your M-Bank is %.2lf\n", amount, datetime, *savingsBalance, *balance);
+
+                
         }
-        else
-        {
-                printf("Insufficient balance. Unable to save to M-SAVINGS.\n");
-        }
+        
+        sleep(DELAY);
 }
 
 void withdrawFromSavings(double* balance, double* savingsBalance, const char* password)
@@ -82,24 +95,37 @@ void withdrawFromSavings(double* balance, double* savingsBalance, const char* pa
         double amount;
 	int passwordCorrect = 0;
 
-        printf("Enter the amount to withdraw: ");
+         /*Getting current time*/
+	time_t t = time(NULL);
+	struct tm* current_time = localtime(&t);
+
+	/*Format the date and time as a string*/
+	char datetime[50];
+	strftime(datetime, sizeof(datetime), "%Y-%m-%d %H:%M", current_time);
+
+        printf("Enter the amount to Withdraw: $");
         scanf("%lf", &amount);
 
         passwordCorrect = validatePassword(password); /*Asks for the password*/
 
-        if (amount <= *savingsBalance)
+        if (passwordCorrect)
         {
-                if (passwordCorrect)
-                {
-                        *balance += amount;
-                        *savingsBalance -= amount;
-                        printf("Amount successfully withdrawn from M-SAVINGS.\n");
-                }
+                if(amount > *balance)
+		{
+			printf("\n\tInsufficient balance. Unable to withdraw from M-SAVINGS.\n");
+                        sleep(DELAY);
+			return;
+		}
+
+                *balance -= amount;
+                *savingsBalance += amount;
+
+                printf("\n\tSuccessfully withdraw %.2lf from M-SAVINGS at %s. Your M-SAVINGS balance is %.2lf and your M-Bank is %.2lf\n", amount, datetime, *savingsBalance, *balance);
+
+                
         }
-        else
-        {
-                printf("Insufficient savings balance. Unable to withdraw from M-SAVINGS.\n");
-        }
+        
+        sleep(DELAY);
 }
 
 void requestLoan(double* balance, double* savingsBalance, double* loanAmount, double loanLimit, const char* password)
@@ -131,6 +157,8 @@ void requestLoan(double* balance, double* savingsBalance, double* loanAmount, do
         {
                 printf("Insufficient savings balance. Unable to request loan.\n");
         }
+
+        sleep(DELAY);
 }
 
 void payLoan(double* balance, double* loanAmount, const char* password)
@@ -166,6 +194,8 @@ void payLoan(double* balance, double* loanAmount, const char* password)
         {
                 printf("You do not have an existing loan.\n");
 	}
+
+        sleep(DELAY);
 }
 
 void checkSavingsBalance(double savingsBalance, const char* password)

@@ -24,7 +24,7 @@ void miniStatement(const char* password);
 
 
 /*LOANS AND SAVINGS PROTOTYPES*/
-void loansAndSavings(double balance, const char* password);
+void loansAndSavings(double* balance, const char* password);
 void sendToSavings(double* balance, double* savingsBalance, const char* password);
 void withdrawFromSavings(double* balance, double* savingsBalance, const char* password);
 void requestLoan(double* balance, double* savingsBalance, double* loanAmount, double loanLimit, const char* password);

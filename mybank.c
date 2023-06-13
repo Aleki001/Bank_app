@@ -58,7 +58,7 @@ int main()
 					break;
 				case 4:
 					printf("\n\n\t Withdraw money\n\n");
-					loansAndSavings(balance, password);
+					loansAndSavings(&balance, password);
 					break;
 				case 5:
 					printf("\n\n\tMy Account\n\n");
