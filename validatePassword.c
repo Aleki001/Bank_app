@@ -19,6 +19,7 @@ int validatePassword(const char* password)
 			system("clear");
 
 			printf("\n  You have entered the wrong password, Try again.\n\n");
+
 			printf("  Re-enter Password: ");
 			scanf("%s", confirmPassword);
 
